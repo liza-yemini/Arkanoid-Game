@@ -1,5 +1,3 @@
-# 207946252
-# gilkarl
 compile: bin
 	find src -name "*.java" > sources.txt
 	javac -cp biuoop-1.4.jar: -d bin @sources.txt
