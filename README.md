@@ -1,7 +1,40 @@
 # Arkanoid Game Project
 
+## Table of Contents:
+- [Introduction](#introduction)
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Level Specification](#level-specification)
+- [Level-Sets File Format](#level-sets-file-format)
+- [Development Notes](#development-notes)
+- [Dependencies](#dependencies)
+
 ## Introduction:
 The Arkanoid Game is a multi-level, Java-based game developed as part of the semester project in the 2nd semester of the 1st year at BIU. Designed without the use of Java's GUI Built-In objects, this game uses a custom GUI implementation which is included in this repository. Unique to its design, the game runs on a single thread, offering a unique take on classic game programming. Users have the flexibility to choose from different levels or even create their own.
+
+## Screenshots:
+
+### Welcome to the Jungle Level
+![Welcome to the Jungle Level](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/Welcome_to_the_jungel_level.jpg)
+
+### Game Over Screen
+![Game Over Screen](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/game_over_screen.jpg)
+
+### High Scores Screen
+![High Scores Screen](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/high_scores_screen.jpg)
+
+### Level Sets Menu
+![Level Sets Menu](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/level_sets_menu.jpg)
+
+### Menu
+![Menu](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/menu.jpg)
+
+### Square Moon Level
+![Square Moon Level](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/square_moon_level.jpg)
+
+### Wide Easy Level
+![Wide Easy Level](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/wide_easy_level.jpg)
 
 ## Features:
 - Multiple levels with varying difficulty.
@@ -40,4 +73,5 @@ The Arkanoid Game is a multi-level, Java-based game developed as part of the sem
 
 ## Dependencies:
 - If compiling and running the source code, ensure to also include the provided `biuoop-1.4.jar` which is crucial for the game's GUI functionality.
+
 
