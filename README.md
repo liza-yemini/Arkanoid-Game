@@ -1,49 +1,43 @@
 # Arkanoid Game Project
 
-An arkanoid game with many different levels and ability to make and play different Level-Sets.
+## Introduction:
+The Arkanoid Game is a multi-level, Java-based game developed as part of the semester project in the 2nd semester of the 1st year at BIU. Designed without the use of Java's GUI Built-In objects, this game uses a custom GUI implementation which is included in this repository. Unique to its design, the game runs on a single thread, offering a unique take on classic game programming. Users have the flexibility to choose from different levels or even create their own.
 
+## Features:
+- Multiple levels with varying difficulty.
+- An opening menu screen for game interactions: start a new game, view high scores, or quit.
+- Customizable level sets for personalized gameplay.
+- Level specifications separate from the core code.
+- Block and level definitions that are human-readable and easy to understand.
 
-## Description
+## Getting Started:
+1. Ensure you have Java SE 10 or higher installed on your machine.
+2. Download and unzip the code repository.
+3. Optionally, create your own Level-Set (See "Level Specification" below) or proceed with the default set.
+4. In the command line, type `make jar`.
+5. Run the game by either double-clicking the `ass7game.jar` file or typing `java -jar ass7game.jar` in the command line.
+6. Enjoy the game!
 
-The game is written in JAVA, using gui.
-The game support on opening Menu-screen, which allows to start a new game, see the current high scores, or quit the game.
-When starting a new game, there is a choise between easy, medium or hard game (Default - can be changed), each game type will have different levels. 
-**The level definitions is seperated from the code** and placed in the `resources directory ` in human readable files with an easy format. [level sets file format](#level-sets-file-format)
+## Level Specification:
+- Level and block definitions are based on human-readable text files.
+- Each block has properties like width, hit-points, appearance, and more.
+- Levels define properties like paddle size, level name, and block layout.
+- Different level-sets can be chosen at the start, which are simply different level specification files. Modify the `level_sets.txt` file in the resources folder to customize these sets.
 
-## Getting Started
-
-- Download and unzip the code repository.
-- Make your own Level-Set (Section 4) or Coutinue to the next step if you want the default.
-- In the command line write the command `make jar`.
-- Click twice on the ass7game.jar file **or** write in the command line the command: `java -jar ass7game.jar`.
-
-You all set and can start enjoying the game!
-
-## Level Specification
-
-The level specification file format is based on human readable text files.
-The level specification format consists of two different file types `levels definitions` and `block definitions`.
-
-* The block definitions format specifies a list of block types (each block has properties such as width, hit-points, appearance, and so on) and associates each type with a name.
-
-* The levels definitions format specifies a list of levels. Each level contains information such as paddle size, level name, and blocks layout. The specification of the block layout refers to the block types defined in a block definitions file.
-
-### Levels Specification Files Format
-
-## Different Level-Sets
-
-provide the player with the option to select a level-set when the game starts. After selecting the "Play Game" option in the main menu, the user will be shown another menu, in which he will be asked to select a level-set (for example "Easy" and "Hard"). After this selection, he will then proceed to play a game based on the levels defined for the set.
-
-Behind the scenes, level-sets are implemented as different level specification files. Each level-set corresponds to one level-specification file. The level-sets will be specified in a levelset file with simple format.
-In order to change the level-sets go to `resources` and change the `level_sets.txt` file according the Level-Sets file format.
-
-### Level-Sets File Format
+## Level-Sets File Format:
 > a:level 1 name <br />
 > path-to-level-1-file <br />
 > b:level 2 name <br />
 > path-to-level-2-file<br />
 > ...
+- Odd-numbered lines are level names with the format `k:description`.
+- Even-numbered lines provide the filenames for level specifications. Ensure these filenames are relative to the classpath.
 
-Odd-numbered lines are level names. The level name lines have the format `k:description` where `k` is a single character (the key for this item) and `description` is a string containing the level-set's description.
+## Development Notes:
+- This project went through 5 stages, reflecting the semester-long journey of refining and enhancing the code. Parts of it were revisited to further improve OOP practices and Java language proficiency.
+- This game is built without relying on Java's built-in GUI objects but instead, utilizes a GUI implementation found in this repository. This offers a different experience for both the developer and the player.
+- While most games of this nature might use multi-threading, our Arkanoid game stands out by running on a single thread.
 
-Even-numbered lines are the corresponding filenames, containing the level specifications. As before, all filenames should be relative to the classpath.
+## Dependencies:
+- If compiling and running the source code, ensure to also include the provided `biuoop-1.4.jar` which is crucial for the game's GUI functionality.
+
