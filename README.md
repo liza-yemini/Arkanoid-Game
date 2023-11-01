@@ -36,6 +36,9 @@ The Arkanoid Game is a multi-level, Java-based game developed as part of the sem
 ### Wide Easy Level
 ![Wide Easy Level](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/wide_easy_level.jpg)
 
+### Robot Kill Level
+![Robot Kill Level](https://github.com/liza-yemini/Arkanoid-Game/blob/master/screenshots/robot_kill_level.jpg)
+
 ## Features:
 - Multiple levels with varying difficulty.
 - An opening menu screen for game interactions: start a new game, view high scores, or quit.
